@@ -11,7 +11,7 @@ const getProgression = (firstElement, difference, length) => {
       return progression;
     }
     progression.push(currentElement);
-    return iter(currentElement + difference, difference, index + 1);
+    return iter(currentElement + difference, progression, index + 1);
   };
   return iter(firstElement, [], 0);
 };
