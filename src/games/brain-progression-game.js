@@ -24,7 +24,7 @@ const getQuestion = (progression, hiddenMemberIndex) => {
 
 const getGameData = () => {
   const firstElement = getRandomNumber();
-  const difference = getRandomNumber(1, 50);
+  const difference = getRandomNumber(1, 10);
   const progression = getProgression(firstElement, difference, PROGRESSION_LENGTH);
   const hiddenMemberIndex = getRandomNumber(0, progression.length - 1);
   const question = getQuestion(progression, hiddenMemberIndex);
