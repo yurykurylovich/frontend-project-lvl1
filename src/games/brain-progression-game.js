@@ -18,7 +18,7 @@ const getProgression = (firstElement, difference, length) => {
 
 const getQuestion = (progression, hiddenMemberIndex) => {
   const question = progression.slice();
-  question[hiddenMemberIndex] = '...';
+  question[hiddenMemberIndex] = '..';
   return question.join(' ');
 };
 
