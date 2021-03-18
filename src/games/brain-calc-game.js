@@ -2,7 +2,7 @@ import getRandomNumber from '../utils.js';
 import startGame from '../index.js';
 
 const taskText = 'What is the result of the expression?';
-const operators = ['+', '-', '*', '/'];
+const operators = ['+', '-', '*'];
 const calculate = (a, operator, b) => {
   switch (operator) {
     case '+':
